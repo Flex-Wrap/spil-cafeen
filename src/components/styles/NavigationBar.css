@@ -33,6 +33,10 @@
     color: #333;
     text-decoration: none;
   }
+
+  .logo a:hover {
+    color: #bd0000;
+  }
   
   /* Desktop menu links */
   .nav-links {
