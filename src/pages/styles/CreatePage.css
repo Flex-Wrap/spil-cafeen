@@ -1,0 +1,88 @@
+.create-game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid layout for form */
+  .form-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Fixed label width, input takes remaining space */
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .form-grid label {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .form-grid input,
+  .form-grid select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Full-width input for image URL */
+  .full-width {
+    grid-column: span 2;
+  }
+  
+  /* Form actions */
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .create-btn,
+  .update-btn,
+  .cancel-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .create-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .create-btn:hover {
+    background-color: #218838;
+  }
+  
+  .update-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .update-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  

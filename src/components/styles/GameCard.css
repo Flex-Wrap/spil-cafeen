@@ -1,0 +1,96 @@
+.game-card {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 2fr 3fr; /* 5 columns */
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 10px;
+    row-gap: 4px;
+    background: #ffe9e3;
+    color: #1c110a;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .game-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 10px;
+  }
+  
+  /* Game properties as a 2-row grid */
+  .game-properties {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    flex-direction: column;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .game-properties img {
+    width: 14px;
+    height: 14px;
+    filter: invert(1);
+  }
+  .game-properties span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* Location */
+  .game-location {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Game image */
+  .game-image img {
+    width: auto;
+    height: 60px;
+    border-radius: 8px;
+  }
+  
+  /* Actions */
+.game-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Make sure all buttons have the same style */
+  .game-actions .edit-btn, 
+  .game-actions .delete-btn {
+      background: #bf171c;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+  }
+  
+
+  .favorite-btn {
+    background-color: #fafafa;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+
+  
+  /* Hover effects */
+  .game-actions button:hover{ background: #9b1318; }
+  
+  .game-likes {
+    grid-column: span 5; /* Spans all columns */
+    text-align: end;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a5a5a;
+  }

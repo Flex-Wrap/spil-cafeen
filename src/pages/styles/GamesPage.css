@@ -1,0 +1,40 @@
+.games-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cafe-accordion {
+    margin-bottom: 15px; /* Space between each café section */
+    border: 1px solid #fafafa;
+    border-radius: 8px;
+    background: #fafafa;
+    overflow: hidden;
+  }
+  
+  .cafe-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    background: #ffe9e3;
+    color: #1c110a;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .cafe-title:hover {
+    background: #ffd4c5;
+  }
+  
+  details[open] .cafe-title {
+    background: #bf171c;
+    color: #fafafa;
+  }
+  
+  .game-list {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
